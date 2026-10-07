@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Responsive Design Tokens and Mobile-First CSS Architecture Demo">
+
+    <title>NovaDash | Responsive Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+
+        <div class="header-container">
+
+            <a href="#" class="logo">
+                <span class="logo-icon">N</span>
+                <span>NovaDash</span>
+            </a>
+
+            <nav class="navigation" aria-label="Main navigation">
+                <a href="#dashboard">Dashboard</a>
+                <a href="#analytics">Analytics</a>
+                <a href="#projects">Projects</a>
+                <a href="#activity">Activity</a>
+            </nav>
+
+            <button class="theme-toggle"
+                    id="themeToggle"
+                    aria-label="Toggle dark mode">
+                <span id="themeIcon">☾</span>
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="main-container">
+
+        <!-- Hero -->
+        <section class="hero-section">
+
+            <div class="hero-content">
+
+                <span class="eyebrow">
+                    RESPONSIVE DASHBOARD
+                </span>
+
+                <h1>
+                    Build smarter.
+                    <span>Design responsively.</span>
+                </h1>
+
+                <p>
+                    A modern mobile-first dashboard demonstrating
+                    CSS custom properties, responsive grids,
+                    glassmorphism and adaptive layouts.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#dashboard" class="btn btn-primary">
+                        Explore Dashboard
+                    </a>
+
+                    <a href="#analytics" class="btn btn-secondary">
+                        View Analytics
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="hero-visual">
+
+                <div class="floating-card card-one">
+                    <span class="mini-icon">↗</span>
+                    <div>
+                        <strong>24.8%</strong>
+                        <small>Growth</small>
+                    </div>
+                </div>
+
+                <div class="dashboard-preview">
+
+                    <div class="preview-top">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+
+                    <div class="preview-chart">
+                        <div class="chart-line"></div>
+                    </div>
+
+                    <div class="preview-bars">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                </div>
+
+                <div class="floating-card card-two">
+                    <span class="mini-icon">✓</span>
+                    <div>
+                        <strong>89%</strong>
+                        <small>Completed</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DASHBOARD ================= -->
+        <section id="dashboard" class="section">
+
+            <div class="section-heading">
+                <div>
+                    <span class="section-label">OVERVIEW</span>
+                    <h2>Dashboard</h2>
+                </div>
+
+                <span class="status">
+                    <span class="status-dot"></span>
+                    Live
+                </span>
+            </div>
+
+
+            <!-- Stats Grid -->
+            <div class="stats-grid">
+
+                <article class="stat-card glass-card">
+
+                    <div class="card-header">
+                        <span class="stat-icon purple">↗</span>
+                        <span class="trend positive">+12.5%</span>
+                    </div>
+
+                    <p class="stat-label">Total Revenue</p>
+
+                    <h3>₹84,520</h3>
+
+                    <p class="stat-description">
+                        Compared with last month
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card glass-card">
+
+                    <div class="card-header">
+                        <span class="stat-icon blue">◎</span>
+                        <span class="trend positive">+8.2%</span>
+                    </div>
+
+                    <p class="stat-label">Active Users</p>
+
+                    <h3>12,480</h3>
+
+                    <p class="stat-description">
+                        Users active this month
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card glass-card">
+
+                    <div class="card-header">
+                        <span class="stat-icon green">✓</span>
+                        <span class="trend positive">+5.7%</span>
+                    </div>
+
+                    <p class="stat-label">Completed Tasks</p>
+
+                    <h3>2,847</h3>
+
+                    <p class="stat-description">
+                        Tasks completed successfully
+                    </p>
+
+                </article>
+
+
+                <article class="stat-card glass-card">
+
+                    <div class="card-header">
+                        <span class="stat-icon orange">⚡</span>
+                        <span class="trend negative">-2.4%</span>
+                    </div>
+
+                    <p class="stat-label">Bounce Rate</p>
+
+                    <h3>28.4%</h3>
+
+                    <p class="stat-description">
+                        Lower is better
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ANALYTICS ================= -->
+        <section id="analytics" class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">PERFORMANCE</span>
+                    <h2>Analytics</h2>
+                </div>
+
+                <select class="period-select" aria-label="Select period">
+                    <option>Last 7 days</option>
+                    <option>Last 30 days</option>
+                    <option>Last 90 days</option>
+                </select>
+
+            </div>
+
+
+            <div class="analytics-grid">
+
+                <!-- Chart -->
+                <article class="chart-card glass-card">
+
+                    <div class="card-title-row">
+                        <div>
+                            <h3>Performance Overview</h3>
+                            <p>Weekly activity</p>
+                        </div>
+
+                        <strong class="chart-value">
+                            78.4%
+                        </strong>
+                    </div>
+
+                    <div class="chart">
+
+                        <div class="chart-y-axis">
+                            <span>100</span>
+                            <span>75</span>
+                            <span>50</span>
+                            <span>25</span>
+                            <span>0</span>
+                        </div>
+
+                        <div class="chart-area">
+
+                            <div class="grid-line line-1"></div>
+                            <div class="grid-line line-2"></div>
+                            <div class="grid-line line-3"></div>
+                            <div class="grid-line line-4"></div>
+
+                            <svg
+                                class="area-chart"
+                                viewBox="0 0 700 260"
+                                preserveAspectRatio="none"
+                                aria-label="Performance chart">
+
+                                <defs>
+                                    <linearGradient
+                                        id="chartGradient"
+                                        x1="0"
+                                        y1="0"
+                                        x2="0"
+                                        y2="1">
+
+                                        <stop
+                                            offset="0%"
+                                            stop-opacity=".35"/>
+
+                                        <stop
+                                            offset="100%"
+                                            stop-opacity="0"/>
+                                    </linearGradient>
+                                </defs>
+
+                                <path
+                                    class="chart-fill"
+                                    d="M0 210
+                                       C70 190 85 170 140 185
+                                       C190 200 215 120 270 145
+                                       C320 165 350 90 405 115
+                                       C455 140 480 75 530 95
+                                       C585 115 610 55 700 40
+                                       L700 260
+                                       L0 260 Z"/>
+
+                                <path
+                                    class="chart-stroke"
+                                    d="M0 210
+                                       C70 190 85 170 140 185
+                                       C190 200 215 120 270 145
+                                       C320 165 350 90 405 115
+                                       C455 140 480 75 530 95
+                                       C585 115 610 55 700 40"/>
+
+                            </svg>
+
+                        </div>
+
+                    </div>
+
+                    <div class="chart-labels">
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                        <span>Sun</span>
+                    </div>
+
+                </article>
+
+
+                <!-- Traffic -->
+                <article class="traffic-card glass-card">
+
+                    <div class="card-title-row">
+                        <div>
+                            <h3>Traffic Sources</h3>
+                            <p>Visitors by channel</p>
+                        </div>
+                    </div>
+
+                    <div class="donut-wrapper">
+
+                        <div class="donut">
+                            <div class="donut-center">
+                                <strong>12.4K</strong>
+                                <span>Visitors</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="traffic-list">
+
+                        <div class="traffic-item">
+                            <span>
+                                <i class="legend purple-bg"></i>
+                                Organic Search
+                            </span>
+                            <strong>42%</strong>
+                        </div>
+
+                        <div class="traffic-item">
+                            <span>
+                                <i class="legend blue-bg"></i>
+                                Social Media
+                            </span>
+                            <strong>28%</strong>
+                        </div>
+
+                        <div class="traffic-item">
+                            <span>
+                                <i class="legend green-bg"></i>
+                                Direct
+                            </span>
+                            <strong>18%</strong>
+                        </div>
+
+                        <div class="traffic-item">
+                            <span>
+                                <i class="legend orange-bg"></i>
+                                Referral
+                            </span>
+                            <strong>12%</strong>
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+        <section id="projects" class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">WORKSPACE</span>
+                    <h2>Projects</h2>
+                </div>
+
+                <button class="btn btn-primary small-btn">
+                    + New Project
+                </button>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+                <article class="project-card glass-card">
+
+                    <div class="project-top">
+                        <span class="project-icon purple">◆</span>
+                        <button class="more-btn">•••</button>
+                    </div>
+
+                    <h3>Website Redesign</h3>
+
+                    <p>
+                        Modern responsive interface for a
+                        growing digital product.
+                    </p>
+
+                    <div class="progress-info">
+                        <span>Progress</span>
+                        <strong>82%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:82%"></span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>Due Oct 14</span>
+                        <span class="badge">Active</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card glass-card">
+
+                    <div class="project-top">
+                        <span class="project-icon blue">◈</span>
+                        <button class="more-btn">•••</button>
+                    </div>
+
+                    <h3>Mobile App</h3>
+
+                    <p>
+                        Building a mobile-first application
+                        for everyday productivity.
+                    </p>
+
+                    <div class="progress-info">
+                        <span>Progress</span>
+                        <strong>64%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:64%"></span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>Due Oct 22</span>
+                        <span class="badge">Active</span>
+                    </div>
+
+                </article>
+
+
+                <article class="project-card glass-card">
+
+                    <div class="project-top">
+                        <span class="project-icon green">●</span>
+                        <button class="more-btn">•••</button>
+                    </div>
+
+                    <h3>Analytics System</h3>
+
+                    <p>
+                        Real-time dashboard for business
+                        performance monitoring.
+                    </p>
+
+                    <div class="progress-info">
+                        <span>Progress</span>
+                        <strong>91%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <span style="width:91%"></span>
+                    </div>
+
+                    <div class="project-footer">
+                        <span>Due Oct 10</span>
+                        <span class="badge completed">
+                            Completed
+                        </span>
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ACTIVITY ================= -->
+        <section id="activity" class="section">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-label">RECENT EVENTS</span>
+                    <h2>Activity</h2>
+                </div>
+
+                <a href="#" class="view-link">
+                    View all →
+                </a>
+
+            </div>
+
+
+            <div class="activity-card glass-card">
+
+                <div class="activity-item">
+
+                    <div class="activity-icon purple">
+                        ✓
+                    </div>
+
+                    <div class="activity-content">
+                        <strong>
+                            Project completed
+                        </strong>
+
+                        <p>
+                            Analytics System was marked
+                            as completed.
+                        </p>
+                    </div>
+
+                    <time>10 min ago</time>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon blue">
+                        ↑
+                    </div>
+
+                    <div class="activity-content">
+                        <strong>
+                            Performance improved
+                        </strong>
+
+                        <p>
+                            Weekly performance increased
+                            by 12.5%.
+                        </p>
+                    </div>
+
+                    <time>1 hour ago</time>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon green">
+                        +
+                    </div>
+
+                    <div class="activity-content">
+                        <strong>
+                            New project created
+                        </strong>
+
+                        <p>
+                            Mobile App project was added
+                            to the workspace.
+                        </p>
+                    </div>
+
+                    <time>3 hours ago</time>
+
+                </div>
+
+
+                <div class="activity-item">
+
+                    <div class="activity-icon orange">
+                        ★
+                    </div>
+
+                    <div class="activity-content">
+                        <strong>
+                            New milestone reached
+                        </strong>
+
+                        <p>
+                            Website Redesign reached 80%
+                            completion.
+                        </p>
+                    </div>
+
+                    <time>Yesterday</time>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+
+        <div class="footer-container">
+
+            <div>
+                <strong>NovaDash</strong>
+                <p>
+                    Responsive Design Tokens Demo
+                </p>
+            </div>
+
+            <p>
+                Built with HTML & CSS
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+
+        const themeToggle =
+            document.getElementById("themeToggle");
+
+        const themeIcon =
+            document.getElementById("themeIcon");
+
+        themeToggle.addEventListener("click", () => {
+
+            document.body.classList.toggle("dark-theme");
+
+            const darkMode =
+                document.body.classList.contains("dark-theme");
+
+            themeIcon.textContent =
+                darkMode ? "☀" : "☾";
+
+            localStorage.setItem(
+                "theme",
+                darkMode ? "dark" : "light"
+            );
+
+        });
+
+
+        /* Remember selected theme */
+
+        const savedTheme =
+            localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+
+            document.body.classList.add("dark-theme");
+
+            themeIcon.textContent = "☀";
+
+        }
+
+    </script>
+
+</body>
+</html>
